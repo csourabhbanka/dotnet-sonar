@@ -1,0 +1,1127 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Throw</name>
+    </assembly>
+    <members>
+        <member name="T:Throw.ExceptionCustomizations">
+            <summary>
+            The exception customizations.
+            Contains a discriminated union of all possible exception customization options.
+            </summary>
+        </member>
+        <member name="P:Throw.ExceptionCustomizations.Customization">
+            <summary>
+            A discriminated union of all possible exception customization options.
+            </summary>
+        </member>
+        <member name="M:Throw.ExceptionCustomizations.#ctor(OneOf.OneOf{System.String,System.Type,System.Func{System.Exception},System.Func{System.String,System.Exception}})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Throw.ExceptionCustomizations"/> class.
+            </summary>
+        </member>
+        <member name="M:Throw.ExceptionCustomizations.op_Implicit(System.String)~Throw.ExceptionCustomizations">
+            <summary>
+            Initializes a new instance of the <see cref="T:Throw.ExceptionCustomizations"/> class.
+            The customization will be the given <paramref name="message"/>.
+            </summary>
+        </member>
+        <member name="M:Throw.ExceptionCustomizations.op_Implicit(System.Type)~Throw.ExceptionCustomizations">
+            <summary>
+            Initializes a new instance of the <see cref="T:Throw.ExceptionCustomizations"/> class.
+            The customization will be an exception of the given <paramref name="type"/>.
+            </summary>
+        </member>
+        <member name="M:Throw.ExceptionCustomizations.op_Implicit(System.Func{System.Exception})~Throw.ExceptionCustomizations">
+            <summary>
+            Initializes a new instance of the <see cref="T:Throw.ExceptionCustomizations"/> class.
+            The customization will be the given exception returning <paramref name="func"/>.
+            </summary>
+        </member>
+        <member name="M:Throw.ExceptionCustomizations.op_Implicit(System.Func{System.String,System.Exception})~Throw.ExceptionCustomizations">
+            <summary>
+            Initializes a new instance of the <see cref="T:Throw.ExceptionCustomizations"/> class.
+            The customization will be the given exception returning <paramref name="func"/>.
+            </summary>
+        </member>
+        <member name="M:Throw.ExceptionCustomizations.op_Implicit(OneOf.OneOf{System.String,System.Type,System.Func{System.Exception},System.Func{System.String,System.Exception}})~Throw.ExceptionCustomizations">
+            <summary>
+            Initializes a new instance of the <see cref="T:Throw.ExceptionCustomizations"/> class.
+            The customization will match the given <paramref name="customizations"/>.
+            </summary>
+        </member>
+        <member name="T:Throw.ExceptionThrower">
+            <summary>
+            Exception throwing extensions.
+            </summary>
+        </member>
+        <member name="M:Throw.ExceptionThrower.ThrowNull(System.String,System.Nullable{Throw.ExceptionCustomizations},System.String)">
+            <summary>
+            Throws an <see cref="T:System.ArgumentNullException"/>, unless the <paramref name="exceptionCustomizations"/> defines a custom exception.
+            </summary>
+        </member>
+        <member name="M:Throw.ExceptionThrower.ThrowOutOfRange``1(System.String,``0,System.Nullable{Throw.ExceptionCustomizations},System.String)">
+            <summary>
+            Throws an <see cref="T:System.ArgumentOutOfRangeException"/>, unless the <paramref name="exceptionCustomizations"/> defines a custom exception.
+            </summary>
+        </member>
+        <member name="M:Throw.ExceptionThrower.Throw(System.String,System.Nullable{Throw.ExceptionCustomizations},System.String)">
+            <summary>
+            Throws an <see cref="T:System.ArgumentException"/>, unless the <paramref name="exceptionCustomizations"/> defines a custom exception.
+            </summary>
+        </member>
+        <member name="T:Throw.Validatable`1">
+            <summary>
+            Creates a new <see cref="T:Throw.Validatable`1"/> instance with the specified value.
+            The <see cref="T:Throw.Validatable`1"/> instance can be used to throw exceptions if the value matches a condition specified.
+            </summary>
+            <param name="Value">The value to be validated.</param>
+            <param name="ParamName">The name of the parameter holding the <paramref name="Value"/>.</param>
+            <param name="ExceptionCustomizations">Customizations to the exception, which will be applied if an exception is thrown.</param>
+        </member>
+        <member name="M:Throw.Validatable`1.#ctor(`0,System.String,System.Nullable{Throw.ExceptionCustomizations})">
+            <summary>
+            Creates a new <see cref="T:Throw.Validatable`1"/> instance with the specified value.
+            The <see cref="T:Throw.Validatable`1"/> instance can be used to throw exceptions if the value matches a condition specified.
+            </summary>
+            <param name="Value">The value to be validated.</param>
+            <param name="ParamName">The name of the parameter holding the <paramref name="Value"/>.</param>
+            <param name="ExceptionCustomizations">Customizations to the exception, which will be applied if an exception is thrown.</param>
+        </member>
+        <member name="P:Throw.Validatable`1.Value">
+            <summary>The value to be validated.</summary>
+        </member>
+        <member name="P:Throw.Validatable`1.ParamName">
+            <summary>The name of the parameter holding the <paramref name="Value"/>.</summary>
+        </member>
+        <member name="P:Throw.Validatable`1.ExceptionCustomizations">
+            <summary>Customizations to the exception, which will be applied if an exception is thrown.</summary>
+        </member>
+        <member name="M:Throw.Validatable`1.op_Implicit(Throw.Validatable{`0})~`0">
+            <summary>
+            Implicit conversion operator back to the original value's type.
+            </summary>
+        </member>
+        <member name="M:Throw.Validatable`1.Throw(System.String)">
+            <summary>
+            Creates a validatable with the specified <paramref name="message"/> exception customization.
+            </summary>
+            <param name="message">A custom exception message which will be used instead of the default message.</param>
+        </member>
+        <member name="M:Throw.Validatable`1.Throw(System.Func{System.Exception})">
+            <summary>
+            Creates a validatable with the specified <paramref name="exceptionThrower"/> exception customization.
+            </summary>
+            <param name="exceptionThrower">A function which returns an excpetion. This function will be used to create the exception that will be thrown if a condition is matched.</param>
+        </member>
+        <member name="M:Throw.Validatable`1.Throw(System.Func{System.String,System.Exception})">
+            <summary>
+            Creates a validatable with the specified <paramref name="exceptionThrower"/> exception customization.
+            </summary>
+            <param name="exceptionThrower">
+            A function which receives the parameter name returns an excpetion.
+            This function will be used to create the exception that will be thrown if a condition is matched.
+            For example: <c>paramName => throw new Exception($"Parameter name: {paramName}")</c>
+            </param>
+        </member>
+        <member name="M:Throw.Validatable`1.Throw``1">
+            <summary>
+            Creates a validatable with the specified exception customization.
+            </summary>
+            <typeparam name="TException">The type of the exception to be thrown.</typeparam>
+        </member>
+        <member name="M:Throw.Validatable`1.Throw">
+            <summary>
+            Creates a validatable with the no customizations.
+            </summary>
+        </member>
+        <member name="T:Throw.ValidatableCreationExtensions">
+            <summary>
+            Extensions for creating <see cref="T:Throw.Validatable`1"/>s.
+            </summary>
+        </member>
+        <member name="M:Throw.ValidatableCreationExtensions.Throw``1(``0,System.Func{System.Exception},System.String)">
+            <summary>
+            Creates a new <see cref="T:Throw.Validatable`1"/> instance with the specified value.
+            The <see cref="T:Throw.Validatable`1"/> instance can be used to throw exceptions if the value matches a condition specified.
+            </summary>
+            <param name="value">The value to be validated.</param>
+            <param name="exceptionThrower">A function which returns an excpetion. This function will be used to create the exception that will be thrown if a condition is matched.</param>
+            <param name="paramName">Doesn't need to be specified. Will be populated by the compiler.</param>
+            <remarks>
+            This extension method is intended for non-nullable types.
+            For nullable types, use the <see cref="M:Throw.ValidatableCreationExtensions.ThrowIfNull``1(System.Nullable{``0},System.Nullable{Throw.ExceptionCustomizations},System.String)"/> extension method.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableCreationExtensions.Throw``1(``0,System.Func{System.String,System.Exception},System.String)">
+            <summary>
+            Creates a new <see cref="T:Throw.Validatable`1"/> instance with the specified value.
+            The <see cref="T:Throw.Validatable`1"/> instance can be used to throw exceptions if the value matches a condition specified.
+            </summary>
+            <param name="value">The value to be validated.</param>
+            <param name="exceptionThrower">
+            A function which receives the parameter name returns an excpetion.
+            This function will be used to create the exception that will be thrown if a condition is matched.
+            For example: <c>paramName => throw new Exception($"Parameter name: {paramName}")</c>
+            </param>
+            <param name="paramName">Doesn't need to be specified. Will be populated by the compiler.</param>
+            <remarks>
+            This extension method is intended for non-nullable types.
+            For nullable types, use the <see cref="M:Throw.ValidatableCreationExtensions.ThrowIfNull``1(System.Nullable{``0},System.Nullable{Throw.ExceptionCustomizations},System.String)"/> extension method.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableCreationExtensions.Throw``1(``0,System.Nullable{Throw.ExceptionCustomizations},System.String)">
+            <summary>
+            Creates a new <see cref="T:Throw.Validatable`1"/> instance with the specified value.
+            The <see cref="T:Throw.Validatable`1"/> instance can be used to throw exceptions if the value matches a condition specified.
+            </summary>
+            <param name="value">The value to be validated.</param>
+            <param name="exceptionCustomizations">Exception customizations. This can be used to supply a custom exception message which will be used instead of the default message.</param>
+            <param name="paramName">Doesn't need to be specified. Will be populated by the compiler.</param>
+            <remarks>
+            This extension method is intended for non-nullable types.
+            For nullable types, use the <see cref="M:Throw.ValidatableCreationExtensions.ThrowIfNull``1(System.Nullable{``0},System.Nullable{Throw.ExceptionCustomizations},System.String)"/> extension method.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableCreationExtensions.ThrowIfNull``1(System.Nullable{``0},System.Func{System.String,System.Exception},System.String)">
+            <summary>
+            Throws an exception if the <paramref name="value"/> is null.
+            Otherwise, creates a new <see cref="T:Throw.Validatable`1"/> instance with the specified value, where the type is the non-nullable type of the given nullable value type <typeparam name="TValue"/>.
+            The <see cref="T:Throw.Validatable`1"/> instance can be used to throw exceptions if the value matches a condition specified.
+            </summary>
+            <param name="value">The nullable value to be validated.</param>
+            <param name="exceptionThrower">A function which returns an excpetion. This function will be used to create the exception that will be thrown if a condition is matched.</param>
+            <param name="paramName">Doesn't need to be specified. Will be populated by the compiler.</param>
+            <remarks>
+            This extension method is intended for nullable value types.
+            For general nullable types, use the <see cref="M:Throw.ValidatableCreationExtensions.ThrowIfNull``1(``0,System.Nullable{Throw.ExceptionCustomizations},System.String)"/> extension method.
+            For non-nullable types, use the <see cref="M:Throw.ValidatableCreationExtensions.Throw``1(``0,System.Nullable{Throw.ExceptionCustomizations},System.String)"/> extension method.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableCreationExtensions.ThrowIfNull``1(System.Nullable{``0},System.Func{System.Exception},System.String)">
+            <summary>
+            Throws an exception if the <paramref name="value"/> is null.
+            Otherwise, creates a new <see cref="T:Throw.Validatable`1"/> instance with the specified value, where the type is the non-nullable type of the given nullable value type <typeparam name="TValue"/>.
+            The <see cref="T:Throw.Validatable`1"/> instance can be used to throw exceptions if the value matches a condition specified.
+            </summary>
+            <param name="value">The nullable value to be validated.</param>
+            <param name="exceptionThrower">
+            A function which receives the parameter name returns an excpetion.
+            This function will be used to create the exception that will be thrown if a condition is matched.
+            For example: <c>paramName => throw new Exception($"Parameter name: {paramName}")</c>
+            </param>
+            <param name="paramName">Doesn't need to be specified. Will be populated by the compiler.</param>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentNullException"/>.
+            This extension method is intended for nullable value types.
+            For general nullable types, use the <see cref="M:Throw.ValidatableCreationExtensions.ThrowIfNull``1(``0,System.Nullable{Throw.ExceptionCustomizations},System.String)"/> extension method.
+            For non-nullable types, use the <see cref="M:Throw.ValidatableCreationExtensions.Throw``1(``0,System.Nullable{Throw.ExceptionCustomizations},System.String)"/> extension method.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableCreationExtensions.ThrowIfNull``1(System.Nullable{``0},System.Nullable{Throw.ExceptionCustomizations},System.String)">
+            <summary>
+            Throws an exception if the <paramref name="value"/> is null.
+            Otherwise, creates a new <see cref="T:Throw.Validatable`1"/> instance with the specified value, where the type is the non-nullable type of the given nullable value type <typeparam name="TValue"/>.
+            The <see cref="T:Throw.Validatable`1"/> instance can be used to throw exceptions if the value matches a condition specified.
+            </summary>
+            <param name="value">The nullable value to be validated.</param>
+            <param name="exceptionCustomizations">Exception customizations. This can be used to supply a custom exception message which will be used instead of the default message.</param>
+            <param name="paramName">Doesn't need to be specified. Will be populated by the compiler.</param>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentNullException"/>.
+            This extension method is intended for nullable value types.
+            For general nullable types, use the <see cref="M:Throw.ValidatableCreationExtensions.ThrowIfNull``1(``0,System.Nullable{Throw.ExceptionCustomizations},System.String)"/> extension method.
+            For non-nullable types, use the <see cref="M:Throw.ValidatableCreationExtensions.Throw``1(``0,System.Nullable{Throw.ExceptionCustomizations},System.String)"/> extension method.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableCreationExtensions.ThrowIfNull``1(``0,System.Func{System.String,System.Exception},System.String)">
+            <summary>
+            Throws an exception if the <paramref name="value"/> is null.
+            Otherwise, creates a new <see cref="T:Throw.Validatable`1"/> instance with the specified value, where the type is the non-nullable type of the given nullable type <typeparam name="TValue"/>.
+            The <see cref="T:Throw.Validatable`1"/> instance can be used to throw exceptions if the value matches a condition specified.
+            </summary>
+            <param name="value">The nullable value to be validated.</param>
+            <param name="exceptionThrower">A function which returns an excpetion. This function will be used to create the exception that will be thrown if a condition is matched.</param>
+            <param name="paramName">Doesn't need to be specified. Will be populated by the compiler.</param>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentNullException"/>.
+            This extension method is intended for general nullable types.
+            For nullable value types, use the <see cref="M:Throw.ValidatableCreationExtensions.ThrowIfNull``1(System.Nullable{``0},System.Nullable{Throw.ExceptionCustomizations},System.String)"/> extension method.
+            For non-nullable types, use the <see cref="M:Throw.ValidatableCreationExtensions.Throw``1(``0,System.Nullable{Throw.ExceptionCustomizations},System.String)"/> extension method.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableCreationExtensions.ThrowIfNull``1(``0,System.Func{System.Exception},System.String)">
+            <summary>
+            Throws an exception if the <paramref name="value"/> is null.
+            Otherwise, creates a new <see cref="T:Throw.Validatable`1"/> instance with the specified value, where the type is the non-nullable type of the given nullable type <typeparam name="TValue"/>.
+            The <see cref="T:Throw.Validatable`1"/> instance can be used to throw exceptions if the value matches a condition specified.
+            </summary>
+            <param name="value">The nullable value to be validated.</param>
+            <param name="exceptionThrower">
+            A function which receives the parameter name returns an excpetion.
+            This function will be used to create the exception that will be thrown if a condition is matched.
+            For example: <c>paramName => throw new Exception($"Parameter name: {paramName}")</c>
+            </param>
+            <param name="paramName">Doesn't need to be specified. Will be populated by the compiler.</param>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentNullException"/>.
+            This extension method is intended for general nullable types.
+            For nullable value types, use the <see cref="M:Throw.ValidatableCreationExtensions.ThrowIfNull``1(System.Nullable{``0},System.Nullable{Throw.ExceptionCustomizations},System.String)"/> extension method.
+            For non-nullable types, use the <see cref="M:Throw.ValidatableCreationExtensions.Throw``1(``0,System.Nullable{Throw.ExceptionCustomizations},System.String)"/> extension method.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableCreationExtensions.ThrowIfNull``1(``0,System.Nullable{Throw.ExceptionCustomizations},System.String)">
+            <summary>
+            Throws an exception if the <paramref name="value"/> is null.
+            Otherwise, creates a new <see cref="T:Throw.Validatable`1"/> instance with the specified value, where the type is the non-nullable type of the given nullable value type <typeparam name="TValue"/>.
+            The <see cref="T:Throw.Validatable`1"/> instance can be used to throw exceptions if the value matches a condition specified.
+            </summary>
+            <param name="value">The nullable value to be validated.</param>
+            <param name="exceptionCustomizations">Exception customizations. This can be used to supply a custom exception message which will be used instead of the default message.</param>
+            <param name="paramName">Doesn't need to be specified. Will be populated by the compiler.</param>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentNullException"/>.
+            This extension method is intended general nullable types.
+            For nullable value types, use the <see cref="M:Throw.ValidatableCreationExtensions.ThrowIfNull``1(System.Nullable{``0},System.Nullable{Throw.ExceptionCustomizations},System.String)"/> extension method.
+            For non-nullable types, use the <see cref="M:Throw.ValidatableCreationExtensions.Throw``1(``0,System.Nullable{Throw.ExceptionCustomizations},System.String)"/> extension method.
+            </remarks>
+        </member>
+        <member name="T:Throw.ValidatableExtensions">
+            <summary>
+            Extension methods for boolean properties.
+            </summary>
+            <summary>
+            Extension methods for booleans.
+            </summary>
+            <summary>
+            Extension methods for collection properties.
+            </summary>
+            <summary>
+            Extension methods for collections.
+            </summary>
+            <summary>
+            Extension methods for comparable properties (int, double, decimal, long, float, short, DateTime, DateOnly, TimeOnly etc.).
+            </summary>
+            <summary>
+            Extension methods for comparables (int, double, decimal, long, float, short, DateTime, DateOnly, TimeOnly etc.).
+            </summary>
+            <summary>
+            Extension methods for controlling whether the "throw" rule will be ignored by the compiler.
+            </summary>
+            <summary>
+            Extension methods for <see cref="T:System.DateTime"/> properties.
+            </summary>
+            <summary>
+            Extension methods for <see cref="T:System.DateTime"/>s.
+            </summary>
+            <summary>
+            Extension methods for enum properties.
+            </summary>
+            <summary>
+            Extension methods for enums.
+            </summary>
+            <summary>
+            Extension methods for equalities.
+            </summary>
+            <summary>
+            Extension methods for property equalities.
+            </summary>
+            <summary>
+            Extension methods for string properties.
+            </summary>
+            <summary>
+            Extension methods for strings.
+            </summary>
+            <summary>
+            Extension methods <see cref="T:System.Uri"/> properties.
+            </summary>
+            <summary>
+            Extension methods <see cref="T:System.Uri"/>s.
+            </summary>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfTrue``1(Throw.Validatable{``0}@,System.Func{``0,System.Boolean},System.String)">
+            <summary>
+            Throws an exception if the boolean value returned from the given <paramref name="func"/> is true.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfFalse``1(Throw.Validatable{``0}@,System.Func{``0,System.Boolean},System.String)">
+            <summary>
+            Throws an exception if the boolean value returned from the given <paramref name="func"/> is false.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfTrue(Throw.Validatable{System.Boolean}@)">
+            <summary>
+            Throws an exception if the boolean value is true.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfFalse(Throw.Validatable{System.Boolean}@)">
+            <summary>
+            Throws an exception if the boolean value is false.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfTrue``1(Throw.Validatable{``0}@,System.Boolean,System.String)">
+            <summary>
+            Throws an exception if the <paramref name="condition"/> is true.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfFalse``1(Throw.Validatable{``0}@,System.Boolean,System.String)">
+            <summary>
+            Throws an exception if the <paramref name="condition"/> is false.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfEmpty``2(Throw.Validatable{``0}@,System.Func{``0,``1},System.String)">
+            <summary>
+            Throws an exception if the collection returned from the given <paramref name="func"/> is empty.
+            Important note: if the collection is a non-evaluated expression, the expression will be evaluated.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotEmpty``2(Throw.Validatable{``0}@,System.Func{``0,``1},System.String)">
+            <summary>
+            Throws an exception if the collection returned from the given <paramref name="func"/> is not empty.
+            Important note: if the collection is a non-evaluated expression, the expression will be evaluated.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfCountNotEquals``2(Throw.Validatable{``0}@,System.Func{``0,``1},System.Int32,System.String)">
+            <summary>
+            Throws an exception if the size of the collection returned from the given <paramref name="func"/> does not match the specified <paramref name="count"/>.
+            Important note: if the collection is a non-evaluated expression, the expression will be evaluated.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfCountEquals``2(Throw.Validatable{``0}@,System.Func{``0,``1},System.Int32,System.String)">
+            <summary>
+            Throws an exception if the size of the collection returned from the given <paramref name="func"/> does matches the specified <paramref name="count"/>.
+            Important note: if the collection is a non-evaluated expression, the expression will be evaluated.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfCountGreaterThan``2(Throw.Validatable{``0}@,System.Func{``0,``1},System.Int32,System.String)">
+            <summary>
+            Throws an exception if the size of the collection returned from the given <paramref name="func"/> is greater than the specified <paramref name="count"/>.
+            Important note: if the collection is a non-evaluated expression, the expression will be evaluated.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfCountLessThan``2(Throw.Validatable{``0}@,System.Func{``0,``1},System.Int32,System.String)">
+            <summary>
+            Throws an exception if the size of the collection returned from the given <paramref name="func"/> is less than the specified <paramref name="count"/>.
+            Important note: if the collection is a non-evaluated expression, the expression will be evaluated.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfHasNullElements``2(Throw.Validatable{``0}@,System.Func{``0,``1},System.String)">
+            <summary>
+            Throws an exception if the size of the collection returned from the given <paramref name="func"/> contains null elements.
+            Important note: if the collection is a non-evaluated expression, the expression will be evaluated.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfEmpty``1(Throw.Validatable{``0}@)">
+            <summary>
+            Throws an exception if the collection is empty.
+            Important note: if the collection is a non-evaluated expression, the expression will be evaluated.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotEmpty``1(Throw.Validatable{``0}@)">
+            <summary>
+            Throws an exception if the collection is not empty.
+            Important note: if the collection is a non-evaluated expression, the expression will be evaluated.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfCountNotEquals``1(Throw.Validatable{``0}@,System.Int32)">
+            <summary>
+            Throws an exception if the collection count does not match the specified <paramref name="count"/>.
+            Important note: if the collection is a non-evaluated expression, the expression will be evaluated.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfCountEquals``1(Throw.Validatable{``0}@,System.Int32)">
+            <summary>
+            Throws an exception if the collection count matches the specified <paramref name="count"/>.
+            Important note: if the collection is a non-evaluated expression, the expression will be evaluated.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfCountGreaterThan``1(Throw.Validatable{``0}@,System.Int32)">
+            <summary>
+            Throws an exception if the collection count is greater than the specified <paramref name="count"/>.
+            Important note: if the collection is a non-evaluated expression, the expression will be evaluated.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfCountLessThan``1(Throw.Validatable{``0}@,System.Int32)">
+            <summary>
+            Throws an exception if the collection count is less than the specified <paramref name="count"/>.
+            Important note: if the collection is a non-evaluated expression, the expression will be evaluated.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfHasNullElements``1(Throw.Validatable{``0}@)">
+            <summary>
+            Throws an exception if the collection contains null elements.
+            Important note: if the collection is a non-evaluated expression, the expression will be evaluated.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfGreaterThan``2(Throw.Validatable{``0}@,System.Func{``0,``1},``1,System.String)">
+            <summary>
+            Throws an exception if the value returned from the given <paramref name="func"/> is greater than <paramref name="n"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentOutOfRangeException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfLessThan``2(Throw.Validatable{``0}@,System.Func{``0,``1},``1,System.String)">
+            <summary>
+            Throws an exception if the value returned from the given <paramref name="func"/> is less than <paramref name="n"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentOutOfRangeException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfEquals``2(Throw.Validatable{``0}@,System.Func{``0,``1},``1,System.String)">
+            <summary>
+            Throws an exception if the value returned from the given <paramref name="func"/> is equal to <paramref name="n"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotEquals``2(Throw.Validatable{``0}@,System.Func{``0,``1},``1,System.String)">
+            <summary>
+            Throws an exception if the value returned from the given <paramref name="func"/> is not equal to <paramref name="n"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfPositive``2(Throw.Validatable{``0}@,System.Func{``0,``1},System.String)">
+            <summary>
+            Throws an exception if the value returned from the given <paramref name="func"/> is greater than 0.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentOutOfRangeException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNegative``2(Throw.Validatable{``0}@,System.Func{``0,``1},System.String)">
+            <summary>
+            Throws an exception if the value returned from the given <paramref name="func"/> is less than 0.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentOutOfRangeException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfOutOfRange``2(Throw.Validatable{``0}@,System.Func{``0,``1},``1,``1,System.String)">
+            <summary>
+            Throws an exception if the value returned from the given <paramref name="func"/> is not between <paramref name="min"/> and <paramref name="max"/>.
+            </summary>
+            <param name="validatable">The validatable being validated.</param>
+            <param name="func">A function that will be applied on the value.</param>
+            <param name="min">The minimum value, inclusive (equals or greater than).</param>
+            <param name="max">The maximum value, inclusive (equals or less than).</param>
+            <param name="funcName">Doesn't need to be specified. Will be populated by the compiler.</param>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentOutOfRangeException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfGreaterThan``1(Throw.Validatable{``0}@,``0)">
+            <summary>
+            Throws an exception if the value is greater than <paramref name="n"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentOutOfRangeException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfLessThan``1(Throw.Validatable{``0}@,``0)">
+            <summary>
+            Throws an exception if the value is less than <paramref name="n"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentOutOfRangeException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfEquals``1(Throw.Validatable{``0}@,``0)">
+            <summary>
+            Throws an exception if the value equals <paramref name="n"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotEquals``1(Throw.Validatable{``0}@,``0)">
+            <summary>
+            Throws an exception if the value does not equal <paramref name="n"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfPositive``1(Throw.Validatable{``0}@)">
+            <summary>
+            Throws an exception if the value is greater than 0.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentOutOfRangeException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNegative``1(Throw.Validatable{``0}@)">
+            <summary>
+            Throws an exception if the value is less than 0.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentOutOfRangeException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfOutOfRange``1(Throw.Validatable{``0}@,``0,``0)">
+            <summary>
+            Throws an exception if the value is not between <paramref name="min"/> and <paramref name="max"/>.
+            </summary>
+            <param name="validatable">The validatable being validated.</param>
+            <param name="min">The minimum value, inclusive (equals or greater than).</param>
+            <param name="max">The maximum value, inclusive (equals or less than).</param>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentOutOfRangeException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.OnlyInDebug``1(Throw.Validatable{``0}@)">
+            <summary>
+            Removes the entire "throw" rule when the build is not debug.
+            </summary>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfUtc``1(Throw.Validatable{``0}@,System.Func{``0,System.DateTime},System.String)">
+            <summary>
+            Throws an exception if the <see cref="T:System.DateTimeKind"/> of the <see cref="T:System.DateTime"/> returned
+            from the given <paramref name="func"/> is <see cref="F:System.DateTimeKind.Utc"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotUtc``1(Throw.Validatable{``0}@,System.Func{``0,System.DateTime},System.String)">
+            <summary>
+            Throws an exception if the <see cref="T:System.DateTimeKind"/> of the <see cref="T:System.DateTime"/> returned
+            from the given <paramref name="func"/> is not <see cref="F:System.DateTimeKind.Utc"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfDateTimeKind``1(Throw.Validatable{``0}@,System.Func{``0,System.DateTime},System.DateTimeKind,System.String)">
+            <summary>
+            Throws an exception if the <see cref="T:System.DateTimeKind"/> of the <see cref="T:System.DateTime"/> returned
+            from the given <paramref name="func"/> matches the given <paramref name="kind"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfDateTimeKindNot``1(Throw.Validatable{``0}@,System.Func{``0,System.DateTime},System.DateTimeKind,System.String)">
+            <summary>
+            Throws an exception if the <see cref="T:System.DateTimeKind"/> of the <see cref="T:System.DateTime"/> returned
+            from the given <paramref name="func"/> does not match the given <paramref name="kind"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfUtc(Throw.Validatable{System.DateTime}@)">
+            <summary>
+            Throws an exception if the <see cref="T:System.DateTimeKind"/> is <see cref="F:System.DateTimeKind.Utc"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotUtc(Throw.Validatable{System.DateTime}@)">
+            <summary>
+            Throws an exception if the <see cref="T:System.DateTimeKind"/> is not <see cref="F:System.DateTimeKind.Utc"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfDateTimeKind(Throw.Validatable{System.DateTime}@,System.DateTimeKind)">
+            <summary>
+            Throws an exception if the <see cref="T:System.DateTimeKind"/> matches the given <paramref name="kind"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfDateTimeKindNot(Throw.Validatable{System.DateTime}@,System.DateTimeKind)">
+            <summary>
+            Throws an exception if the <see cref="T:System.DateTimeKind"/> does not match the given <paramref name="kind"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfOutOfRange``2(Throw.Validatable{``0}@,System.Func{``0,``1},System.String)">
+            <summary>
+            Throws an exception if the enum value returned from the given
+            <paramref name="func"/> is not defined in the enum.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentOutOfRangeException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfOutOfRange``1(Throw.Validatable{``0}@)">
+            <summary>
+            Throws an exception if the enum value is not defined in the enum.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentOutOfRangeException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfDefault``1(Throw.Validatable{``0}@)">
+            <summary>
+            Throws an exception if the value is equal to the default value of type <typeparamref name="TValue"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotDefault``1(Throw.Validatable{``0}@)">
+            <summary>
+            Throws an exception if the value is not equal to the default value of type <typeparamref name="TValue"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNull``2(Throw.Validatable{``0}@,System.Func{``0,``1},System.String)">
+            <summary>
+            Throws an exception if the value returned from the given <paramref name="func"/> is equal to null.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentNullException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotNull``2(Throw.Validatable{``0}@,System.Func{``0,``1},System.String)">
+            <summary>
+            Throws an exception if the value returned from the given <paramref name="func"/> is not equal to null.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentNullException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfDefault``2(Throw.Validatable{``0}@,System.Func{``0,``1},System.String)">
+            <summary>
+            Throws an exception if the value returned from the given <paramref name="func"/> is equal to the default value of type <typeparamref name="TValue"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotDefault``2(Throw.Validatable{``0}@,System.Func{``0,``1},System.String)">
+            <summary>
+            Throws an exception if the value returned from the given <paramref name="func"/> is not equal to the default value of type <typeparamref name="TValue"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfWhiteSpace``1(Throw.Validatable{``0}@,System.Func{``0,System.String},System.String)">
+            <summary>
+            Throws an exception if the string returned from the given <paramref name="func"/> is white space only.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfEmpty``1(Throw.Validatable{``0}@,System.Func{``0,System.String},System.String)">
+            <summary>
+            Throws an exception if the string returned from the given <paramref name="func"/> is empty.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfLongerThan``1(Throw.Validatable{``0}@,System.Func{``0,System.String},System.Int32,System.String)">
+            <summary>
+            Throws an exception if the string returned from the given <paramref name="func"/> is longer than <paramref name="length"/> characters.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfShorterThan``1(Throw.Validatable{``0}@,System.Func{``0,System.String},System.Int32,System.String)">
+            <summary>
+            Throws an exception if the string returned from the given <paramref name="func"/> is shorter than <paramref name="length"/> characters.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfEquals``1(Throw.Validatable{``0}@,System.Func{``0,System.String},System.String,System.String)">
+            <summary>
+            Throws an exception if the string returned from the given <paramref name="func"/> equals the given <paramref name="otherString"/> (case sensitive).
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotEquals``1(Throw.Validatable{``0}@,System.Func{``0,System.String},System.String,System.String)">
+            <summary>
+            Throws an exception if the string returned from the given <paramref name="func"/> does not equal the given <paramref name="otherString"/> (case sensitive).
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfEqualsIgnoreCase``1(Throw.Validatable{``0}@,System.Func{``0,System.String},System.String,System.String)">
+            <summary>
+            Throws an exception if the string returned from the given <paramref name="func"/> equals the given <paramref name="otherString"/> (case insensitive).
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotEqualsIgnoreCase``1(Throw.Validatable{``0}@,System.Func{``0,System.String},System.String,System.String)">
+            <summary>
+            Throws an exception if the string returned from the given <paramref name="func"/> does not equal the given <paramref name="otherString"/> (case insensitive).
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfLengthEquals``1(Throw.Validatable{``0}@,System.Func{``0,System.String},System.Int32,System.String)">
+            <summary>
+            Throws an exception if the length of string returned from the given <paramref name="func"/> is equal to <paramref name="length"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfLengthNotEquals``1(Throw.Validatable{``0}@,System.Func{``0,System.String},System.Int32,System.String)">
+            <summary>
+            Throws an exception if the length of string returned from the given <paramref name="func"/> is not equal to <paramref name="length"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfWhiteSpace(Throw.Validatable{System.String}@)">
+            <summary>
+            Throws an exception if the string is white space only.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfEmpty(Throw.Validatable{System.String}@)">
+            <summary>
+            Throws an exception if the string is empty.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfLongerThan(Throw.Validatable{System.String}@,System.Int32)">
+            <summary>
+            Throws an exception if the string is longer than <paramref name="length"/> characters.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfShorterThan(Throw.Validatable{System.String}@,System.Int32)">
+            <summary>
+            Throws an exception if the string is shortter than <paramref name="length"/> characters.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfEquals(Throw.Validatable{System.String}@,System.String)">
+            <summary>
+            Throws an exception if the string equals the given <paramref name="otherString"/> (case sensitive).
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotEquals(Throw.Validatable{System.String}@,System.String)">
+            <summary>
+            Throws an exception if the string does not equal the given <paramref name="otherString"/> (case sensitive).
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfEqualsIgnoreCase(Throw.Validatable{System.String}@,System.String)">
+            <summary>
+            Throws an exception if the string equals the given <paramref name="otherString"/> (case insensitive).
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotEqualsIgnoreCase(Throw.Validatable{System.String}@,System.String)">
+            <summary>
+            Throws an exception if the string does not equal the given <paramref name="otherString"/> (case insensitive).
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfLengthEquals(Throw.Validatable{System.String}@,System.Int32)">
+            <summary>
+            Throws an exception if the string length is equal to <paramref name="length"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfLengthNotEquals(Throw.Validatable{System.String}@,System.Int32)">
+            <summary>
+            Throws an exception if the string length is not equal to <paramref name="length"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfHttp``1(Throw.Validatable{``0}@,System.Func{``0,System.Uri},System.String)">
+            <summary>
+            Throws an exception if scheme of the <see cref="T:System.Uri"/> returned from the given <paramref name="func"/> is <see cref="F:System.Uri.UriSchemeHttp"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotHttp``1(Throw.Validatable{``0}@,System.Func{``0,System.Uri},System.String)">
+            <summary>
+            Throws an exception if scheme of the <see cref="T:System.Uri"/> returned from the given <paramref name="func"/> is not <see cref="F:System.Uri.UriSchemeHttp"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfHttps``1(Throw.Validatable{``0}@,System.Func{``0,System.Uri},System.String)">
+            <summary>
+            Throws an exception if scheme of the <see cref="T:System.Uri"/> returned from the given <paramref name="func"/> is <see cref="F:System.Uri.UriSchemeHttps"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotHttps``1(Throw.Validatable{``0}@,System.Func{``0,System.Uri},System.String)">
+            <summary>
+            Throws an exception if scheme of the <see cref="T:System.Uri"/> returned from the given <paramref name="func"/> is not <see cref="F:System.Uri.UriSchemeHttps"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfScheme``1(Throw.Validatable{``0}@,System.Func{``0,System.Uri},System.String,System.String)">
+            <summary>
+            Throws an exception if scheme of the <see cref="T:System.Uri"/> returned from the given <paramref name="func"/> matches the given <paramref name="scheme"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfSchemeNot``1(Throw.Validatable{``0}@,System.Func{``0,System.Uri},System.String,System.String)">
+            <summary>
+            Throws an exception if scheme of the <see cref="T:System.Uri"/> returned from the given <paramref name="func"/> does not match the given <paramref name="scheme"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfAbsolute``1(Throw.Validatable{``0}@,System.Func{``0,System.Uri},System.String)">
+            <summary>
+            Throws an exception if scheme of the <see cref="T:System.Uri"/> returned from the given <paramref name="func"/> is absolute.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfRelative``1(Throw.Validatable{``0}@,System.Func{``0,System.Uri},System.String)">
+            <summary>
+            Throws an exception if scheme of the <see cref="T:System.Uri"/> returned from the given <paramref name="func"/> is relative.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotRelative``1(Throw.Validatable{``0}@,System.Func{``0,System.Uri},System.String)">
+            <summary>
+            Throws an exception if scheme of the <see cref="T:System.Uri"/> returned from the given <paramref name="func"/> is not relative.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotAbsolute``1(Throw.Validatable{``0}@,System.Func{``0,System.Uri},System.String)">
+            <summary>
+            Throws an exception if scheme of the <see cref="T:System.Uri"/> returned from the given <paramref name="func"/> is not absolute.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfPort``1(Throw.Validatable{``0}@,System.Func{``0,System.Uri},System.Int32,System.String)">
+            <summary>
+            Throws an exception if port of the <see cref="T:System.Uri"/> returned from the given <paramref name="func"/> matches the given <paramref name="port"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfPortNot``1(Throw.Validatable{``0}@,System.Func{``0,System.Uri},System.Int32,System.String)">
+            <summary>
+            Throws an exception if port of the <see cref="T:System.Uri"/> returned from the given <paramref name="func"/> does not match the given <paramref name="port"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfHttp(Throw.Validatable{System.Uri}@)">
+            <summary>
+            Throws an exception if scheme of the <see cref="T:System.Uri"/> is <see cref="F:System.Uri.UriSchemeHttp"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotHttp(Throw.Validatable{System.Uri}@)">
+            <summary>
+            Throws an exception if scheme of the <see cref="T:System.Uri"/> is not <see cref="F:System.Uri.UriSchemeHttp"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfHttps(Throw.Validatable{System.Uri}@)">
+            <summary>
+            Throws an exception if scheme of the <see cref="T:System.Uri"/> is <see cref="F:System.Uri.UriSchemeHttps"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotHttps(Throw.Validatable{System.Uri}@)">
+            <summary>
+            Throws an exception if scheme of the <see cref="T:System.Uri"/> is not <see cref="F:System.Uri.UriSchemeHttps"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfScheme(Throw.Validatable{System.Uri}@,System.String)">
+            <summary>
+            Throws an exception if scheme of the <see cref="T:System.Uri"/> matches the given <paramref name="scheme"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfSchemeNot(Throw.Validatable{System.Uri}@,System.String)">
+            <summary>
+            Throws an exception if scheme of the <see cref="T:System.Uri"/> does not match the given <paramref name="scheme"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfAbsolute(Throw.Validatable{System.Uri}@)">
+            <summary>
+            Throws an exception if scheme of the <see cref="T:System.Uri"/> is absolute.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfRelative(Throw.Validatable{System.Uri}@)">
+            <summary>
+            Throws an exception if scheme of the <see cref="T:System.Uri"/> is relative.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotAbsolute(Throw.Validatable{System.Uri}@)">
+            <summary>
+            Throws an exception if scheme of the <see cref="T:System.Uri"/> is not absolute.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfNotRelative(Throw.Validatable{System.Uri}@)">
+            <summary>
+            Throws an exception if scheme of the <see cref="T:System.Uri"/> is not relative.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfPort(Throw.Validatable{System.Uri}@,System.Int32)">
+            <summary>
+            Throws an exception if port of the <see cref="T:System.Uri"/> matches the given <paramref name="port"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+        <member name="M:Throw.ValidatableExtensions.IfPortNot(Throw.Validatable{System.Uri}@,System.Int32)">
+            <summary>
+            Throws an exception if port of the <see cref="T:System.Uri"/> does not match the given <paramref name="port"/>.
+            </summary>
+            <remarks>
+            The default exception thrown is an <see cref="T:System.ArgumentException"/>.
+            </remarks>
+        </member>
+    </members>
+</doc>

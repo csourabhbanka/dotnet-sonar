@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Om/JMA8B1zZYVi+EQ2HhrkS1/nWfyiuVXmdjD4/3Z4/8oMFgXcR/Otjx86Vjj5O8+yY4VmaH0zPUemz4rM6EYg==",
+  "success": true,
+  "projectFilePath": "/cloudbees/workspace/src/Throw.csproj",
+  "expectedPackageFiles": [
+    "/Users/sbanka/.nuget/packages/jetbrains.annotations/2021.3.0/jetbrains.annotations.2021.3.0.nupkg.sha512",
+    "/Users/sbanka/.nuget/packages/oneof/3.0.211/oneof.3.0.211.nupkg.sha512"
+  ],
+  "logs": []
+}

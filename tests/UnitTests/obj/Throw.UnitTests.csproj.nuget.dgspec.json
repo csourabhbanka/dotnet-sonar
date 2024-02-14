@@ -1,0 +1,151 @@
+{
+  "format": 1,
+  "restore": {
+    "/cloudbees/workspace/tests/UnitTests/Throw.UnitTests.csproj": {}
+  },
+  "projects": {
+    "/cloudbees/workspace/src/Throw.csproj": {
+      "version": "1.1.1",
+      "restore": {
+        "projectUniqueName": "/cloudbees/workspace/src/Throw.csproj",
+        "projectName": "Throw",
+        "projectPath": "/cloudbees/workspace/src/Throw.csproj",
+        "packagesPath": "/Users/sbanka/.nuget/packages/",
+        "outputPath": "/cloudbees/workspace/src/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sbanka/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "JetBrains.Annotations": {
+              "target": "Package",
+              "version": "[2021.3.0, )"
+            },
+            "OneOf": {
+              "target": "Package",
+              "version": "[3.0.211, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/cloudbees/workspace/tests/UnitTests/Throw.UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/cloudbees/workspace/tests/UnitTests/Throw.UnitTests.csproj",
+        "projectName": "Throw.UnitTests",
+        "projectPath": "/cloudbees/workspace/tests/UnitTests/Throw.UnitTests.csproj",
+        "packagesPath": "/Users/sbanka/.nuget/packages/",
+        "outputPath": "/cloudbees/workspace/tests/UnitTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sbanka/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/cloudbees/workspace/src/Throw.csproj": {
+                "projectPath": "/cloudbees/workspace/src/Throw.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+/cloudbees/workspace/src/bin/Debug/net8.0/Throw.deps.json
+/cloudbees/workspace/src/bin/Debug/net8.0/Throw.dll
+/cloudbees/workspace/src/bin/Debug/net8.0/Throw.pdb
+/cloudbees/workspace/src/bin/Debug/net8.0/Throw.xml
+/cloudbees/workspace/src/obj/Debug/net8.0/Throw.csproj.AssemblyReference.cache
+/cloudbees/workspace/src/obj/Debug/net8.0/Throw.GeneratedMSBuildEditorConfig.editorconfig
+/cloudbees/workspace/src/obj/Debug/net8.0/Throw.AssemblyInfoInputs.cache
+/cloudbees/workspace/src/obj/Debug/net8.0/Throw.AssemblyInfo.cs
+/cloudbees/workspace/src/obj/Debug/net8.0/Throw.csproj.CoreCompileInputs.cache
+/cloudbees/workspace/src/obj/Debug/net8.0/Throw.sourcelink.json
+/cloudbees/workspace/src/obj/Debug/net8.0/Throw.dll
+/cloudbees/workspace/src/obj/Debug/net8.0/refint/Throw.dll
+/cloudbees/workspace/src/obj/Debug/net8.0/Throw.xml
+/cloudbees/workspace/src/obj/Debug/net8.0/Throw.pdb
+/cloudbees/workspace/src/obj/Debug/net8.0/ref/Throw.dll
