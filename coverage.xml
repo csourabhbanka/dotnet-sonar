@@ -1,0 +1,2542 @@
+{
+  "Throw.dll": {
+    "/cloudbees/workspace/src/Common/ExceptionCustomizations.cs": {
+      "Throw.ExceptionCustomizations": {
+        "OneOf.OneOf`4<System.String,System.Type,System.Func`1<System.Exception>,System.Func`2<System.String,System.Exception>> Throw.ExceptionCustomizations::get_Customization()": {
+          "Lines": {
+            "12": 25
+          },
+          "Branches": []
+        },
+        "Throw.ExceptionCustomizations Throw.ExceptionCustomizations::op_Implicit(System.String)": {
+          "Lines": {
+            "26": 8
+          },
+          "Branches": []
+        },
+        "Throw.ExceptionCustomizations Throw.ExceptionCustomizations::op_Implicit(System.Type)": {
+          "Lines": {
+            "32": 3
+          },
+          "Branches": []
+        },
+        "Throw.ExceptionCustomizations Throw.ExceptionCustomizations::op_Implicit(System.Func`1<System.Exception>)": {
+          "Lines": {
+            "38": 7
+          },
+          "Branches": []
+        },
+        "Throw.ExceptionCustomizations Throw.ExceptionCustomizations::op_Implicit(System.Func`2<System.String,System.Exception>)": {
+          "Lines": {
+            "44": 7
+          },
+          "Branches": []
+        },
+        "Throw.ExceptionCustomizations Throw.ExceptionCustomizations::op_Implicit(OneOf.OneOf`4<System.String,System.Type,System.Func`1<System.Exception>,System.Func`2<System.String,System.Exception>>)": {
+          "Lines": {
+            "50": 1
+          },
+          "Branches": []
+        },
+        "System.Void Throw.ExceptionCustomizations::.ctor(OneOf.OneOf`4<System.String,System.Type,System.Func`1<System.Exception>,System.Func`2<System.String,System.Exception>>)": {
+          "Lines": {
+            "18": 26,
+            "19": 26,
+            "20": 26
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/cloudbees/workspace/src/Common/ExceptionThrower.cs": {
+      "Throw.ExceptionThrower": {
+        "System.Void Throw.ExceptionThrower::ThrowNull(System.String,System.Nullable`1<Throw.ExceptionCustomizations>,System.String)": {
+          "Lines": {
+            "13": 8,
+            "14": 8,
+            "15": 4,
+            "16": 4,
+            "19": 4,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 5
+          },
+          "Branches": [
+            {
+              "Line": 14,
+              "Offset": 33,
+              "EndOffset": 35,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 4
+            },
+            {
+              "Line": 14,
+              "Offset": 33,
+              "EndOffset": 54,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            },
+            {
+              "Line": 20,
+              "Offset": 8,
+              "EndOffset": 10,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 8,
+              "EndOffset": 17,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void Throw.ExceptionThrower::ThrowOutOfRange(System.String,TValue,System.Nullable`1<Throw.ExceptionCustomizations>,System.String)": {
+          "Lines": {
+            "31": 18,
+            "32": 18,
+            "33": 14,
+            "34": 14,
+            "37": 4,
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 5
+          },
+          "Branches": [
+            {
+              "Line": 32,
+              "Offset": 40,
+              "EndOffset": 42,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 14
+            },
+            {
+              "Line": 32,
+              "Offset": 40,
+              "EndOffset": 72,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            },
+            {
+              "Line": 37,
+              "Offset": 108,
+              "EndOffset": 110,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 37,
+              "Offset": 108,
+              "EndOffset": 133,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 4
+            },
+            {
+              "Line": 37,
+              "Offset": 139,
+              "EndOffset": 141,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 37,
+              "Offset": 139,
+              "EndOffset": 164,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 4
+            },
+            {
+              "Line": 38,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 19,
+              "EndOffset": 28,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void Throw.ExceptionThrower::Throw(System.String,System.Nullable`1<Throw.ExceptionCustomizations>,System.String)": {
+          "Lines": {
+            "49": 90,
+            "50": 90,
+            "51": 86,
+            "52": 86,
+            "55": 4,
+            "56": 1,
+            "57": 1,
+            "58": 1,
+            "59": 5
+          },
+          "Branches": [
+            {
+              "Line": 50,
+              "Offset": 33,
+              "EndOffset": 35,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 86
+            },
+            {
+              "Line": 50,
+              "Offset": 33,
+              "EndOffset": 54,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            },
+            {
+              "Line": 56,
+              "Offset": 2,
+              "EndOffset": 4,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 56,
+              "Offset": 2,
+              "EndOffset": 11,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "/cloudbees/workspace/src/Common/Validatable.cs": {
+      "Throw.Validatable`1": {
+        "TValue Throw.Validatable`1::get_Value()": {
+          "Lines": {
+            "10": 668
+          },
+          "Branches": []
+        },
+        "TValue Throw.Validatable`1::op_Implicit(Throw.Validatable`1<TValue>)": {
+          "Lines": {
+            "16": 1,
+            "17": 1,
+            "18": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue> Throw.Validatable`1::Throw(System.String)": {
+          "Lines": {
+            "25": 1,
+            "26": 1,
+            "27": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue> Throw.Validatable`1::Throw(System.Func`1<System.Exception>)": {
+          "Lines": {
+            "34": 1,
+            "35": 1,
+            "36": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue> Throw.Validatable`1::Throw(System.Func`2<System.String,System.Exception>)": {
+          "Lines": {
+            "47": 1,
+            "48": 1,
+            "49": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue> Throw.Validatable`1::Throw()": {
+          "Lines": {
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "65": 1,
+            "66": 1,
+            "67": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/cloudbees/workspace/src/ValidatableCreation/ValidatableCreationExtensions.cs": {
+      "Throw.ValidatableCreationExtensions": {
+        "Throw.Validatable`1<TValue> Throw.ValidatableCreationExtensions::Throw(TValue,System.Func`1<System.Exception>,System.String)": {
+          "Lines": {
+            "22": 1,
+            "23": 1,
+            "24": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue> Throw.ValidatableCreationExtensions::Throw(TValue,System.Func`2<System.String,System.Exception>,System.String)": {
+          "Lines": {
+            "44": 1,
+            "45": 1,
+            "46": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue> Throw.ValidatableCreationExtensions::Throw(TValue,System.Nullable`1<Throw.ExceptionCustomizations>,System.String)": {
+          "Lines": {
+            "62": 217,
+            "63": 217,
+            "64": 217
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/cloudbees/workspace/src/ValidatableCreation/ValidatableCreationExtensions.Nullables.cs": {
+      "Throw.ValidatableCreationExtensions": {
+        "Throw.Validatable`1<TValue> Throw.ValidatableCreationExtensions::ThrowIfNull(System.Nullable`1<TValue>,System.Func`2<System.String,System.Exception>,System.String)": {
+          "Lines": {
+            "21": 1,
+            "22": 1,
+            "23": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue> Throw.ValidatableCreationExtensions::ThrowIfNull(System.Nullable`1<TValue>,System.Func`1<System.Exception>,System.String)": {
+          "Lines": {
+            "46": 1,
+            "47": 1,
+            "48": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue> Throw.ValidatableCreationExtensions::ThrowIfNull(System.Nullable`1<TValue>,System.Nullable`1<Throw.ExceptionCustomizations>,System.String)": {
+          "Lines": {
+            "67": 5,
+            "68": 5,
+            "69": 1,
+            "70": 1,
+            "71": 0,
+            "73": 4,
+            "74": 4
+          },
+          "Branches": [
+            {
+              "Line": 68,
+              "Offset": 13,
+              "EndOffset": 15,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 68,
+              "Offset": 13,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            }
+          ]
+        },
+        "Throw.Validatable`1<TValue> Throw.ValidatableCreationExtensions::ThrowIfNull(TValue,System.Func`2<System.String,System.Exception>,System.String)": {
+          "Lines": {
+            "93": 1,
+            "94": 1,
+            "95": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue> Throw.ValidatableCreationExtensions::ThrowIfNull(TValue,System.Func`1<System.Exception>,System.String)": {
+          "Lines": {
+            "118": 1,
+            "119": 1,
+            "120": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue> Throw.ValidatableCreationExtensions::ThrowIfNull(TValue,System.Nullable`1<Throw.ExceptionCustomizations>,System.String)": {
+          "Lines": {
+            "139": 5,
+            "140": 5,
+            "141": 1,
+            "142": 1,
+            "143": 0,
+            "145": 4,
+            "146": 4
+          },
+          "Branches": [
+            {
+              "Line": 140,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 140,
+              "Offset": 12,
+              "EndOffset": 29,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            }
+          ]
+        }
+      }
+    },
+    "/cloudbees/workspace/src/ValidatableExtensions/ValidatableExtensions.BooleanProperties.cs": {
+      "Throw.ValidatableExtensions": {
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfTrue(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.Boolean>,System.String)": {
+          "Lines": {
+            "17": 2,
+            "18": 2,
+            "19": 1,
+            "20": 1,
+            "21": 0,
+            "23": 1,
+            "24": 1
+          },
+          "Branches": [
+            {
+              "Line": 18,
+              "Offset": 15,
+              "EndOffset": 17,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 18,
+              "Offset": 15,
+              "EndOffset": 53,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfFalse(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.Boolean>,System.String)": {
+          "Lines": {
+            "35": 2,
+            "36": 2,
+            "37": 1,
+            "38": 1,
+            "39": 0,
+            "41": 1,
+            "42": 1
+          },
+          "Branches": [
+            {
+              "Line": 36,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 36,
+              "Offset": 18,
+              "EndOffset": 56,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "/cloudbees/workspace/src/ValidatableExtensions/ValidatableExtensions.Booleans.cs": {
+      "Throw.ValidatableExtensions": {
+        "Throw.Validatable`1<System.Boolean>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfTrue(Throw.Validatable`1<System.Boolean>&)": {
+          "Lines": {
+            "16": 2,
+            "17": 2,
+            "18": 1,
+            "19": 1,
+            "20": 0,
+            "22": 1,
+            "23": 1
+          },
+          "Branches": [
+            {
+              "Line": 17,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 17,
+              "Offset": 9,
+              "EndOffset": 36,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "Throw.Validatable`1<System.Boolean>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfFalse(Throw.Validatable`1<System.Boolean>&)": {
+          "Lines": {
+            "33": 2,
+            "34": 2,
+            "35": 1,
+            "36": 1,
+            "37": 0,
+            "39": 1,
+            "40": 1
+          },
+          "Branches": [
+            {
+              "Line": 34,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 34,
+              "Offset": 12,
+              "EndOffset": 39,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfTrue(Throw.Validatable`1<TValue>&,System.Boolean,System.String)": {
+          "Lines": {
+            "51": 2,
+            "52": 2,
+            "53": 1,
+            "54": 1,
+            "55": 0,
+            "57": 1,
+            "58": 1
+          },
+          "Branches": [
+            {
+              "Line": 52,
+              "Offset": 4,
+              "EndOffset": 6,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 52,
+              "Offset": 4,
+              "EndOffset": 42,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfFalse(Throw.Validatable`1<TValue>&,System.Boolean,System.String)": {
+          "Lines": {
+            "69": 2,
+            "70": 2,
+            "71": 1,
+            "72": 1,
+            "73": 0,
+            "75": 1,
+            "76": 1
+          },
+          "Branches": [
+            {
+              "Line": 70,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 70,
+              "Offset": 7,
+              "EndOffset": 45,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "/cloudbees/workspace/src/ValidatableExtensions/ValidatableExtensions.CollectionProperties.cs": {
+      "Throw.ValidatableExtensions": {
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfEmpty(Throw.Validatable`1<TValue>&,System.Func`2<TValue,TCollectionType>,System.String)": {
+          "Lines": {
+            "21": 2,
+            "22": 2,
+            "24": 1,
+            "25": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotEmpty(Throw.Validatable`1<TValue>&,System.Func`2<TValue,TCollectionType>,System.String)": {
+          "Lines": {
+            "38": 2,
+            "39": 2,
+            "41": 1,
+            "42": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfCountNotEquals(Throw.Validatable`1<TValue>&,System.Func`2<TValue,TCollectionType>,System.Int32,System.String)": {
+          "Lines": {
+            "55": 2,
+            "56": 2,
+            "58": 1,
+            "59": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfCountEquals(Throw.Validatable`1<TValue>&,System.Func`2<TValue,TCollectionType>,System.Int32,System.String)": {
+          "Lines": {
+            "72": 2,
+            "73": 2,
+            "75": 1,
+            "76": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfCountGreaterThan(Throw.Validatable`1<TValue>&,System.Func`2<TValue,TCollectionType>,System.Int32,System.String)": {
+          "Lines": {
+            "89": 3,
+            "90": 3,
+            "92": 2,
+            "93": 2
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfCountLessThan(Throw.Validatable`1<TValue>&,System.Func`2<TValue,TCollectionType>,System.Int32,System.String)": {
+          "Lines": {
+            "106": 3,
+            "107": 3,
+            "109": 2,
+            "110": 2
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfHasNullElements(Throw.Validatable`1<TValue>&,System.Func`2<TValue,TCollectionType>,System.String)": {
+          "Lines": {
+            "123": 2,
+            "124": 2,
+            "126": 1,
+            "127": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/cloudbees/workspace/src/ValidatableExtensions/ValidatableExtensions.Collections.cs": {
+      "Throw.ValidatableExtensions": {
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfEmpty(Throw.Validatable`1<TValue>&)": {
+          "Lines": {
+            "20": 2,
+            "21": 2,
+            "23": 1,
+            "24": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotEmpty(Throw.Validatable`1<TValue>&)": {
+          "Lines": {
+            "36": 2,
+            "37": 2,
+            "39": 1,
+            "40": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfCountNotEquals(Throw.Validatable`1<TValue>&,System.Int32)": {
+          "Lines": {
+            "52": 2,
+            "53": 2,
+            "55": 1,
+            "56": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfCountEquals(Throw.Validatable`1<TValue>&,System.Int32)": {
+          "Lines": {
+            "68": 2,
+            "69": 2,
+            "71": 1,
+            "72": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfCountGreaterThan(Throw.Validatable`1<TValue>&,System.Int32)": {
+          "Lines": {
+            "84": 3,
+            "85": 3,
+            "87": 2,
+            "88": 2
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfCountLessThan(Throw.Validatable`1<TValue>&,System.Int32)": {
+          "Lines": {
+            "100": 3,
+            "101": 3,
+            "103": 2,
+            "104": 2
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfHasNullElements(Throw.Validatable`1<TValue>&)": {
+          "Lines": {
+            "116": 2,
+            "117": 2,
+            "119": 1,
+            "120": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/cloudbees/workspace/src/ValidatableExtensions/ValidatableExtensions.ComparableProperties.cs": {
+      "Throw.ValidatableExtensions": {
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfGreaterThan(Throw.Validatable`1<TValue>&,System.Func`2<TValue,TResult>,TResult,System.String)": {
+          "Lines": {
+            "22": 3,
+            "23": 3,
+            "24": 3,
+            "25": 3,
+            "26": 3,
+            "27": 3,
+            "29": 2,
+            "30": 2
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfLessThan(Throw.Validatable`1<TValue>&,System.Func`2<TValue,TResult>,TResult,System.String)": {
+          "Lines": {
+            "46": 3,
+            "47": 3,
+            "48": 3,
+            "49": 3,
+            "50": 3,
+            "51": 3,
+            "53": 2,
+            "54": 2
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfEquals(Throw.Validatable`1<TValue>&,System.Func`2<TValue,TResult>,TResult,System.String)": {
+          "Lines": {
+            "70": 2,
+            "71": 2,
+            "72": 2,
+            "73": 2,
+            "74": 2,
+            "75": 2,
+            "77": 1,
+            "78": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotEquals(Throw.Validatable`1<TValue>&,System.Func`2<TValue,TResult>,TResult,System.String)": {
+          "Lines": {
+            "94": 2,
+            "95": 2,
+            "96": 2,
+            "97": 2,
+            "98": 2,
+            "99": 2,
+            "101": 1,
+            "102": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfPositive(Throw.Validatable`1<TValue>&,System.Func`2<TValue,TResult>,System.String)": {
+          "Lines": {
+            "117": 3,
+            "118": 3,
+            "119": 3,
+            "120": 3,
+            "121": 3,
+            "122": 3,
+            "124": 2,
+            "125": 2
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNegative(Throw.Validatable`1<TValue>&,System.Func`2<TValue,TResult>,System.String)": {
+          "Lines": {
+            "140": 3,
+            "141": 3,
+            "142": 3,
+            "143": 3,
+            "144": 3,
+            "145": 3,
+            "147": 2,
+            "148": 2
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfOutOfRange(Throw.Validatable`1<TValue>&,System.Func`2<TValue,TResult>,TResult,TResult,System.String)": {
+          "Lines": {
+            "170": 4,
+            "171": 4,
+            "172": 4,
+            "173": 4,
+            "174": 4,
+            "175": 4,
+            "176": 4,
+            "178": 3,
+            "179": 3
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/cloudbees/workspace/src/ValidatableExtensions/ValidatableExtensions.Comparables.cs": {
+      "Throw.ValidatableExtensions": {
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfGreaterThan(Throw.Validatable`1<TValue>&,TValue)": {
+          "Lines": {
+            "17": 3,
+            "18": 3,
+            "20": 2,
+            "21": 2
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfLessThan(Throw.Validatable`1<TValue>&,TValue)": {
+          "Lines": {
+            "32": 3,
+            "33": 3,
+            "35": 2,
+            "36": 2
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfEquals(Throw.Validatable`1<TValue>&,TValue)": {
+          "Lines": {
+            "47": 2,
+            "48": 2,
+            "50": 1,
+            "51": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotEquals(Throw.Validatable`1<TValue>&,TValue)": {
+          "Lines": {
+            "62": 2,
+            "63": 2,
+            "65": 1,
+            "66": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfPositive(Throw.Validatable`1<TValue>&)": {
+          "Lines": {
+            "77": 3,
+            "78": 3,
+            "80": 2,
+            "81": 2
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNegative(Throw.Validatable`1<TValue>&)": {
+          "Lines": {
+            "92": 3,
+            "93": 3,
+            "95": 2,
+            "96": 2
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfOutOfRange(Throw.Validatable`1<TValue>&,TValue,TValue)": {
+          "Lines": {
+            "110": 4,
+            "111": 4,
+            "113": 3,
+            "114": 3
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/cloudbees/workspace/src/ValidatableExtensions/ValidatableExtensions.ConditionalCompilation.cs": {
+      "Throw.ValidatableExtensions": {
+        "System.Void Throw.ValidatableExtensions::OnlyInDebug(Throw.Validatable`1<TValue>&)": {
+          "Lines": {
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/cloudbees/workspace/src/ValidatableExtensions/ValidatableExtensions.DateTimeProperties.cs": {
+      "Throw.ValidatableExtensions": {
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfUtc(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.DateTime>,System.String)": {
+          "Lines": {
+            "18": 3,
+            "19": 3,
+            "21": 1,
+            "22": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotUtc(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.DateTime>,System.String)": {
+          "Lines": {
+            "34": 2,
+            "35": 2,
+            "37": 1,
+            "38": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfDateTimeKind(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.DateTime>,System.DateTimeKind,System.String)": {
+          "Lines": {
+            "50": 2,
+            "51": 2,
+            "53": 1,
+            "54": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfDateTimeKindNot(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.DateTime>,System.DateTimeKind,System.String)": {
+          "Lines": {
+            "66": 2,
+            "67": 2,
+            "69": 1,
+            "70": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/cloudbees/workspace/src/ValidatableExtensions/ValidatableExtensions.DateTimes.cs": {
+      "Throw.ValidatableExtensions": {
+        "Throw.Validatable`1<System.DateTime>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfUtc(Throw.Validatable`1<System.DateTime>&)": {
+          "Lines": {
+            "16": 2,
+            "17": 2,
+            "19": 1,
+            "20": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.DateTime>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotUtc(Throw.Validatable`1<System.DateTime>&)": {
+          "Lines": {
+            "30": 2,
+            "31": 2,
+            "33": 1,
+            "34": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.DateTime>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfDateTimeKind(Throw.Validatable`1<System.DateTime>&,System.DateTimeKind)": {
+          "Lines": {
+            "44": 2,
+            "45": 2,
+            "47": 1,
+            "48": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.DateTime>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfDateTimeKindNot(Throw.Validatable`1<System.DateTime>&,System.DateTimeKind)": {
+          "Lines": {
+            "58": 2,
+            "59": 2,
+            "61": 1,
+            "62": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/cloudbees/workspace/src/ValidatableExtensions/ValidatableExtensions.EnumProperties.cs": {
+      "Throw.ValidatableExtensions": {
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfOutOfRange(Throw.Validatable`1<TValue>&,System.Func`2<TValue,TEnumValue>,System.String)": {
+          "Lines": {
+            "22": 2,
+            "23": 2,
+            "25": 1,
+            "26": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/cloudbees/workspace/src/ValidatableExtensions/ValidatableExtensions.Enums.cs": {
+      "Throw.ValidatableExtensions": {
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfOutOfRange(Throw.Validatable`1<TValue>&)": {
+          "Lines": {
+            "17": 2,
+            "18": 2,
+            "20": 1,
+            "21": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/cloudbees/workspace/src/ValidatableExtensions/ValidatableExtensions.Equalities.cs": {
+      "Throw.ValidatableExtensions": {
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfDefault(Throw.Validatable`1<TValue>&)": {
+          "Lines": {
+            "17": 2,
+            "18": 2,
+            "20": 1,
+            "21": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotDefault(Throw.Validatable`1<TValue>&)": {
+          "Lines": {
+            "32": 2,
+            "33": 2,
+            "35": 1,
+            "36": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/cloudbees/workspace/src/ValidatableExtensions/ValidatableExtensions.EqualityProperties.cs": {
+      "Throw.ValidatableExtensions": {
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNull(Throw.Validatable`1<TValue>&,System.Func`2<TValue,TResult>,System.String)": {
+          "Lines": {
+            "17": 2,
+            "18": 2,
+            "19": 1,
+            "20": 1,
+            "21": 0,
+            "23": 1,
+            "24": 1
+          },
+          "Branches": [
+            {
+              "Line": 18,
+              "Offset": 23,
+              "EndOffset": 25,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 18,
+              "Offset": 23,
+              "EndOffset": 61,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotNull(Throw.Validatable`1<TValue>&,System.Func`2<TValue,TResult>,System.String)": {
+          "Lines": {
+            "35": 2,
+            "36": 2,
+            "37": 1,
+            "38": 1,
+            "39": 0,
+            "41": 1,
+            "42": 1
+          },
+          "Branches": [
+            {
+              "Line": 36,
+              "Offset": 26,
+              "EndOffset": 28,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 36,
+              "Offset": 26,
+              "EndOffset": 64,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfDefault(Throw.Validatable`1<TValue>&,System.Func`2<TValue,TResult>,System.String)": {
+          "Lines": {
+            "54": 2,
+            "55": 2,
+            "57": 1,
+            "58": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotDefault(Throw.Validatable`1<TValue>&,System.Func`2<TValue,TResult>,System.String)": {
+          "Lines": {
+            "70": 2,
+            "71": 2,
+            "73": 1,
+            "74": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/cloudbees/workspace/src/ValidatableExtensions/ValidatableExtensions.StringProperties.cs": {
+      "Throw.ValidatableExtensions": {
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfWhiteSpace(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.String>,System.String)": {
+          "Lines": {
+            "17": 2,
+            "18": 2,
+            "20": 1,
+            "21": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfEmpty(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.String>,System.String)": {
+          "Lines": {
+            "32": 2,
+            "33": 2,
+            "35": 1,
+            "36": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfLongerThan(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.String>,System.Int32,System.String)": {
+          "Lines": {
+            "47": 2,
+            "48": 2,
+            "50": 1,
+            "51": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfShorterThan(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.String>,System.Int32,System.String)": {
+          "Lines": {
+            "62": 2,
+            "63": 2,
+            "65": 1,
+            "66": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfEquals(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.String>,System.String,System.String)": {
+          "Lines": {
+            "77": 2,
+            "78": 2,
+            "80": 1,
+            "81": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotEquals(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.String>,System.String,System.String)": {
+          "Lines": {
+            "92": 2,
+            "93": 2,
+            "95": 1,
+            "96": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfEqualsIgnoreCase(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.String>,System.String,System.String)": {
+          "Lines": {
+            "107": 3,
+            "108": 3,
+            "110": 1,
+            "111": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotEqualsIgnoreCase(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.String>,System.String,System.String)": {
+          "Lines": {
+            "122": 3,
+            "123": 3,
+            "125": 2,
+            "126": 2
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfLengthEquals(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.String>,System.Int32,System.String)": {
+          "Lines": {
+            "137": 2,
+            "138": 2,
+            "140": 1,
+            "141": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfLengthNotEquals(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.String>,System.Int32,System.String)": {
+          "Lines": {
+            "152": 2,
+            "153": 2,
+            "155": 1,
+            "156": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/cloudbees/workspace/src/ValidatableExtensions/ValidatableExtensions.Strings.cs": {
+      "Throw.ValidatableExtensions": {
+        "Throw.Validatable`1<System.String>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfWhiteSpace(Throw.Validatable`1<System.String>&)": {
+          "Lines": {
+            "16": 2,
+            "17": 2,
+            "19": 1,
+            "20": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.String>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfEmpty(Throw.Validatable`1<System.String>&)": {
+          "Lines": {
+            "30": 2,
+            "31": 2,
+            "33": 1,
+            "34": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.String>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfLongerThan(Throw.Validatable`1<System.String>&,System.Int32)": {
+          "Lines": {
+            "44": 2,
+            "45": 2,
+            "47": 1,
+            "48": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.String>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfShorterThan(Throw.Validatable`1<System.String>&,System.Int32)": {
+          "Lines": {
+            "58": 2,
+            "59": 2,
+            "61": 1,
+            "62": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.String>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfEquals(Throw.Validatable`1<System.String>&,System.String)": {
+          "Lines": {
+            "72": 2,
+            "73": 2,
+            "75": 1,
+            "76": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.String>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotEquals(Throw.Validatable`1<System.String>&,System.String)": {
+          "Lines": {
+            "86": 2,
+            "87": 2,
+            "89": 1,
+            "90": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.String>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfEqualsIgnoreCase(Throw.Validatable`1<System.String>&,System.String)": {
+          "Lines": {
+            "100": 3,
+            "101": 3,
+            "103": 1,
+            "104": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.String>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotEqualsIgnoreCase(Throw.Validatable`1<System.String>&,System.String)": {
+          "Lines": {
+            "114": 3,
+            "115": 3,
+            "117": 2,
+            "118": 2
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.String>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfLengthEquals(Throw.Validatable`1<System.String>&,System.Int32)": {
+          "Lines": {
+            "128": 2,
+            "129": 2,
+            "131": 1,
+            "132": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.String>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfLengthNotEquals(Throw.Validatable`1<System.String>&,System.Int32)": {
+          "Lines": {
+            "142": 2,
+            "143": 2,
+            "145": 1,
+            "146": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/cloudbees/workspace/src/ValidatableExtensions/ValidatableExtensions.UriProperties.cs": {
+      "Throw.ValidatableExtensions": {
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfHttp(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.Uri>,System.String)": {
+          "Lines": {
+            "17": 2,
+            "18": 2,
+            "20": 1,
+            "21": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotHttp(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.Uri>,System.String)": {
+          "Lines": {
+            "32": 2,
+            "33": 2,
+            "35": 1,
+            "36": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfHttps(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.Uri>,System.String)": {
+          "Lines": {
+            "47": 2,
+            "48": 2,
+            "50": 1,
+            "51": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotHttps(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.Uri>,System.String)": {
+          "Lines": {
+            "62": 2,
+            "63": 2,
+            "65": 1,
+            "66": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfScheme(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.Uri>,System.String,System.String)": {
+          "Lines": {
+            "77": 2,
+            "78": 2,
+            "80": 1,
+            "81": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfSchemeNot(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.Uri>,System.String,System.String)": {
+          "Lines": {
+            "92": 2,
+            "93": 2,
+            "95": 1,
+            "96": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfAbsolute(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.Uri>,System.String)": {
+          "Lines": {
+            "107": 2,
+            "108": 2,
+            "110": 1,
+            "111": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfRelative(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.Uri>,System.String)": {
+          "Lines": {
+            "122": 2,
+            "123": 2,
+            "125": 1,
+            "126": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotRelative(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.Uri>,System.String)": {
+          "Lines": {
+            "137": 2,
+            "138": 2,
+            "140": 1,
+            "141": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotAbsolute(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.Uri>,System.String)": {
+          "Lines": {
+            "152": 2,
+            "153": 2,
+            "155": 1,
+            "156": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfPort(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.Uri>,System.Int32,System.String)": {
+          "Lines": {
+            "167": 2,
+            "168": 2,
+            "170": 1,
+            "171": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<TValue>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfPortNot(Throw.Validatable`1<TValue>&,System.Func`2<TValue,System.Uri>,System.Int32,System.String)": {
+          "Lines": {
+            "182": 2,
+            "183": 2,
+            "185": 1,
+            "186": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/cloudbees/workspace/src/ValidatableExtensions/ValidatalbeExtensions.Uris.cs": {
+      "Throw.ValidatableExtensions": {
+        "Throw.Validatable`1<System.Uri>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfHttp(Throw.Validatable`1<System.Uri>&)": {
+          "Lines": {
+            "16": 2,
+            "17": 2,
+            "19": 1,
+            "20": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.Uri>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotHttp(Throw.Validatable`1<System.Uri>&)": {
+          "Lines": {
+            "30": 2,
+            "31": 2,
+            "33": 1,
+            "34": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.Uri>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfHttps(Throw.Validatable`1<System.Uri>&)": {
+          "Lines": {
+            "44": 2,
+            "45": 2,
+            "47": 1,
+            "48": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.Uri>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotHttps(Throw.Validatable`1<System.Uri>&)": {
+          "Lines": {
+            "58": 2,
+            "59": 2,
+            "61": 1,
+            "62": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.Uri>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfScheme(Throw.Validatable`1<System.Uri>&,System.String)": {
+          "Lines": {
+            "72": 2,
+            "73": 2,
+            "75": 1,
+            "76": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.Uri>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfSchemeNot(Throw.Validatable`1<System.Uri>&,System.String)": {
+          "Lines": {
+            "86": 2,
+            "87": 2,
+            "89": 1,
+            "90": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.Uri>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfAbsolute(Throw.Validatable`1<System.Uri>&)": {
+          "Lines": {
+            "100": 2,
+            "101": 2,
+            "103": 1,
+            "104": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.Uri>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfRelative(Throw.Validatable`1<System.Uri>&)": {
+          "Lines": {
+            "114": 2,
+            "115": 2,
+            "117": 1,
+            "118": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.Uri>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotAbsolute(Throw.Validatable`1<System.Uri>&)": {
+          "Lines": {
+            "128": 2,
+            "129": 2,
+            "131": 1,
+            "132": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.Uri>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfNotRelative(Throw.Validatable`1<System.Uri>&)": {
+          "Lines": {
+            "142": 2,
+            "143": 2,
+            "145": 1,
+            "146": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.Uri>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfPort(Throw.Validatable`1<System.Uri>&,System.Int32)": {
+          "Lines": {
+            "156": 2,
+            "157": 2,
+            "159": 1,
+            "160": 1
+          },
+          "Branches": []
+        },
+        "Throw.Validatable`1<System.Uri>& modreq(System.Runtime.InteropServices.InAttribute) Throw.ValidatableExtensions::IfPortNot(Throw.Validatable`1<System.Uri>&,System.Int32)": {
+          "Lines": {
+            "170": 2,
+            "171": 2,
+            "173": 1,
+            "174": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/cloudbees/workspace/src/Validators/Validator.Collections.cs": {
+      "Throw.Validator": {
+        "System.Void Throw.Validator::ThrowIfCountNot(TValue,System.Int32,System.String,System.Nullable`1<Throw.ExceptionCustomizations>,System.String)": {
+          "Lines": {
+            "10": 8,
+            "11": 8,
+            "12": 4,
+            "13": 4,
+            "14": 0,
+            "15": 4
+          },
+          "Branches": [
+            {
+              "Line": 11,
+              "Offset": 15,
+              "EndOffset": 17,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 4
+            },
+            {
+              "Line": 13,
+              "Offset": 23,
+              "EndOffset": 25,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 13,
+              "Offset": 23,
+              "EndOffset": 78,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 4
+            },
+            {
+              "Line": 11,
+              "Offset": 15,
+              "EndOffset": 85,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfCount(TValue,System.Int32,System.String,System.Nullable`1<Throw.ExceptionCustomizations>,System.String)": {
+          "Lines": {
+            "20": 8,
+            "21": 8,
+            "22": 4,
+            "23": 4,
+            "24": 0,
+            "25": 4
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 4
+            },
+            {
+              "Line": 23,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 23,
+              "Offset": 20,
+              "EndOffset": 75,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 4
+            },
+            {
+              "Line": 21,
+              "Offset": 12,
+              "EndOffset": 82,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfCountGreaterThan(TValue,System.Int32,System.String,System.Nullable`1<Throw.ExceptionCustomizations>)": {
+          "Lines": {
+            "30": 6,
+            "31": 6,
+            "32": 2,
+            "33": 2,
+            "34": 0,
+            "35": 4
+          },
+          "Branches": [
+            {
+              "Line": 31,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 31,
+              "Offset": 12,
+              "EndOffset": 76,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfCountLessThan(TValue,System.Int32,System.String,System.Nullable`1<Throw.ExceptionCustomizations>)": {
+          "Lines": {
+            "40": 6,
+            "41": 6,
+            "42": 2,
+            "43": 2,
+            "44": 0,
+            "45": 4
+          },
+          "Branches": [
+            {
+              "Line": 41,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 41,
+              "Offset": 12,
+              "EndOffset": 76,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfHasNullElements(TValue,System.String,System.Nullable`1<Throw.ExceptionCustomizations>)": {
+          "Lines": {
+            "50": 4,
+            "51": 24,
+            "52": 7,
+            "53": 7,
+            "54": 2,
+            "55": 2,
+            "56": 0,
+            "57": 5,
+            "58": 2
+          },
+          "Branches": [
+            {
+              "Line": 51,
+              "Offset": 56,
+              "EndOffset": 18,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 7
+            },
+            {
+              "Line": 53,
+              "Offset": 32,
+              "EndOffset": 34,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 53,
+              "Offset": 32,
+              "EndOffset": 49,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 5
+            },
+            {
+              "Line": 51,
+              "Offset": 56,
+              "EndOffset": 58,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Int32 Throw.Validator::GetCollectionCount(TValue)": {
+          "Lines": {
+            "63": 33,
+            "76": 33,
+            "77": 33,
+            "78": 31,
+            "79": 1,
+            "80": 1,
+            "81": 33,
+            "82": 33
+          },
+          "Branches": [
+            {
+              "Line": 76,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 76,
+              "Offset": 19,
+              "EndOffset": 40,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 31
+            },
+            {
+              "Line": 76,
+              "Offset": 34,
+              "EndOffset": 51,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 76,
+              "Offset": 34,
+              "EndOffset": 60,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Int32 Throw.Validator::<GetCollectionCount>g__GetEnumeratedCount|5_0(System.Collections.IEnumerable)": {
+          "Lines": {
+            "65": 1,
+            "66": 1,
+            "67": 1,
+            "68": 11,
+            "69": 10,
+            "70": 10,
+            "71": 10,
+            "73": 1,
+            "74": 1
+          },
+          "Branches": [
+            {
+              "Line": 68,
+              "Offset": 26,
+              "EndOffset": 12,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 10
+            },
+            {
+              "Line": 68,
+              "Offset": 26,
+              "EndOffset": 28,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "/cloudbees/workspace/src/Validators/Validator.Comperables.cs": {
+      "Throw.Validator": {
+        "System.Void Throw.Validator::ThrowIfGreaterThan(TValue,TValue,System.String,System.Nullable`1<Throw.ExceptionCustomizations>)": {
+          "Lines": {
+            "8": 12,
+            "9": 12,
+            "10": 4,
+            "11": 4,
+            "12": 0,
+            "13": 8
+          },
+          "Branches": [
+            {
+              "Line": 9,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 4
+            },
+            {
+              "Line": 9,
+              "Offset": 18,
+              "EndOffset": 83,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 8
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfLessThan(TValue,TValue,System.String,System.Nullable`1<Throw.ExceptionCustomizations>)": {
+          "Lines": {
+            "18": 12,
+            "19": 12,
+            "20": 4,
+            "21": 4,
+            "22": 0,
+            "23": 8
+          },
+          "Branches": [
+            {
+              "Line": 19,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 4
+            },
+            {
+              "Line": 19,
+              "Offset": 18,
+              "EndOffset": 83,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 8
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfNotInRange(TValue,TValue,TValue,System.String,System.Nullable`1<Throw.ExceptionCustomizations>)": {
+          "Lines": {
+            "28": 8,
+            "29": 8,
+            "30": 2,
+            "31": 2,
+            "32": 0,
+            "33": 6
+          },
+          "Branches": [
+            {
+              "Line": 29,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 8
+            },
+            {
+              "Line": 29,
+              "Offset": 14,
+              "EndOffset": 33,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 29,
+              "Offset": 36,
+              "EndOffset": 38,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 29,
+              "Offset": 36,
+              "EndOffset": 124,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 6
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfNotEquals(TValue,TValue,System.String,System.Nullable`1<Throw.ExceptionCustomizations>,System.String)": {
+          "Lines": {
+            "38": 8,
+            "39": 8,
+            "40": 4,
+            "41": 4,
+            "42": 0,
+            "43": 4
+          },
+          "Branches": [
+            {
+              "Line": 39,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 4
+            },
+            {
+              "Line": 41,
+              "Offset": 26,
+              "EndOffset": 28,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 41,
+              "Offset": 26,
+              "EndOffset": 81,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 4
+            },
+            {
+              "Line": 39,
+              "Offset": 18,
+              "EndOffset": 88,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfEquals(TValue,TValue,System.String,System.Nullable`1<Throw.ExceptionCustomizations>,System.String)": {
+          "Lines": {
+            "48": 8,
+            "49": 8,
+            "50": 4,
+            "51": 4,
+            "52": 0,
+            "53": 4
+          },
+          "Branches": [
+            {
+              "Line": 49,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 4
+            },
+            {
+              "Line": 51,
+              "Offset": 26,
+              "EndOffset": 28,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 51,
+              "Offset": 26,
+              "EndOffset": 81,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 4
+            },
+            {
+              "Line": 49,
+              "Offset": 18,
+              "EndOffset": 88,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            }
+          ]
+        }
+      }
+    },
+    "/cloudbees/workspace/src/Validators/Validator.DateTimes.cs": {
+      "Throw.Validator": {
+        "System.Void Throw.Validator::ThrowIfNotKind(System.DateTime,System.DateTimeKind,System.String,System.Nullable`1<Throw.ExceptionCustomizations>)": {
+          "Lines": {
+            "7": 8,
+            "8": 8,
+            "9": 4,
+            "10": 4,
+            "11": 0,
+            "12": 4
+          },
+          "Branches": [
+            {
+              "Line": 8,
+              "Offset": 16,
+              "EndOffset": 18,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 4
+            },
+            {
+              "Line": 8,
+              "Offset": 16,
+              "EndOffset": 80,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfKind(System.DateTime,System.DateTimeKind,System.String,System.Nullable`1<Throw.ExceptionCustomizations>)": {
+          "Lines": {
+            "16": 9,
+            "17": 9,
+            "18": 5,
+            "19": 5,
+            "20": 0,
+            "21": 4
+          },
+          "Branches": [
+            {
+              "Line": 17,
+              "Offset": 13,
+              "EndOffset": 15,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 5
+            },
+            {
+              "Line": 17,
+              "Offset": 13,
+              "EndOffset": 77,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            }
+          ]
+        }
+      }
+    },
+    "/cloudbees/workspace/src/Validators/Validator.Enums.cs": {
+      "Throw.Validator": {
+        "System.Void Throw.Validator::ThrowIfOutOfRange(TValue,System.String,System.Nullable`1<Throw.ExceptionCustomizations>)": {
+          "Lines": {
+            "8": 4,
+            "9": 4,
+            "10": 2,
+            "11": 2,
+            "12": 0,
+            "13": 2
+          },
+          "Branches": [
+            {
+              "Line": 9,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 9,
+              "Offset": 12,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        }
+      }
+    },
+    "/cloudbees/workspace/src/Validators/Validator.Strings.cs": {
+      "Throw.Validator": {
+        "System.Void Throw.Validator::ThrowIfLongerThan(System.String,System.String,System.Nullable`1<Throw.ExceptionCustomizations>,System.Int32)": {
+          "Lines": {
+            "7": 4,
+            "8": 4,
+            "9": 2,
+            "10": 2,
+            "11": 0,
+            "12": 2
+          },
+          "Branches": [
+            {
+              "Line": 8,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 8,
+              "Offset": 12,
+              "EndOffset": 76,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfShorterThan(System.String,System.String,System.Nullable`1<Throw.ExceptionCustomizations>,System.Int32)": {
+          "Lines": {
+            "16": 4,
+            "17": 4,
+            "18": 2,
+            "19": 2,
+            "20": 0,
+            "21": 2
+          },
+          "Branches": [
+            {
+              "Line": 17,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 17,
+              "Offset": 12,
+              "EndOffset": 76,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfEmpty(System.String,System.String,System.Nullable`1<Throw.ExceptionCustomizations>)": {
+          "Lines": {
+            "25": 4,
+            "26": 4,
+            "27": 2,
+            "28": 2,
+            "29": 0,
+            "30": 2
+          },
+          "Branches": [
+            {
+              "Line": 26,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 26,
+              "Offset": 12,
+              "EndOffset": 29,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfWhiteSpace(System.String,System.String,System.Nullable`1<Throw.ExceptionCustomizations>)": {
+          "Lines": {
+            "34": 4,
+            "35": 4,
+            "36": 2,
+            "37": 2,
+            "38": 0,
+            "39": 2
+          },
+          "Branches": [
+            {
+              "Line": 35,
+              "Offset": 8,
+              "EndOffset": 10,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 35,
+              "Offset": 8,
+              "EndOffset": 29,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            },
+            {
+              "Line": 35,
+              "Offset": 36,
+              "EndOffset": 38,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 35,
+              "Offset": 36,
+              "EndOffset": 53,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfEqualsIgnoreCase(System.String,System.String,System.Nullable`1<Throw.ExceptionCustomizations>,System.String)": {
+          "Lines": {
+            "43": 6,
+            "44": 6,
+            "45": 4,
+            "46": 4,
+            "47": 0,
+            "48": 2
+          },
+          "Branches": [
+            {
+              "Line": 44,
+              "Offset": 11,
+              "EndOffset": 13,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 4
+            },
+            {
+              "Line": 44,
+              "Offset": 11,
+              "EndOffset": 39,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfNotEqualsIgnoreCase(System.String,System.String,System.Nullable`1<Throw.ExceptionCustomizations>,System.String)": {
+          "Lines": {
+            "52": 6,
+            "53": 6,
+            "54": 2,
+            "55": 2,
+            "56": 0,
+            "57": 4
+          },
+          "Branches": [
+            {
+              "Line": 53,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 53,
+              "Offset": 14,
+              "EndOffset": 42,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfEquals(System.String,System.String,System.Nullable`1<Throw.ExceptionCustomizations>,System.String)": {
+          "Lines": {
+            "61": 4,
+            "62": 4,
+            "63": 2,
+            "64": 2,
+            "65": 0,
+            "66": 2
+          },
+          "Branches": [
+            {
+              "Line": 62,
+              "Offset": 11,
+              "EndOffset": 13,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 62,
+              "Offset": 11,
+              "EndOffset": 39,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfNotEquals(System.String,System.String,System.Nullable`1<Throw.ExceptionCustomizations>,System.String)": {
+          "Lines": {
+            "70": 4,
+            "71": 4,
+            "72": 2,
+            "73": 2,
+            "74": 0,
+            "75": 2
+          },
+          "Branches": [
+            {
+              "Line": 71,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 71,
+              "Offset": 14,
+              "EndOffset": 42,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfLengthEquals(System.String,System.String,System.Nullable`1<Throw.ExceptionCustomizations>,System.Int32)": {
+          "Lines": {
+            "79": 4,
+            "80": 4,
+            "81": 2,
+            "82": 2,
+            "83": 0,
+            "84": 2
+          },
+          "Branches": [
+            {
+              "Line": 80,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 80,
+              "Offset": 12,
+              "EndOffset": 76,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfLengthNotEquals(System.String,System.String,System.Nullable`1<Throw.ExceptionCustomizations>,System.Int32)": {
+          "Lines": {
+            "88": 4,
+            "89": 4,
+            "90": 2,
+            "91": 2,
+            "92": 0,
+            "93": 2
+          },
+          "Branches": [
+            {
+              "Line": 89,
+              "Offset": 15,
+              "EndOffset": 17,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 89,
+              "Offset": 15,
+              "EndOffset": 79,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        }
+      }
+    },
+    "/cloudbees/workspace/src/Validators/Validator.Uris.cs": {
+      "Throw.Validator": {
+        "System.Void Throw.Validator::ThrowIfSchemeNot(System.Uri,System.String,System.String,System.Nullable`1<Throw.ExceptionCustomizations>)": {
+          "Lines": {
+            "7": 12,
+            "8": 12,
+            "9": 6,
+            "10": 6,
+            "11": 0,
+            "12": 6
+          },
+          "Branches": [
+            {
+              "Line": 8,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 6
+            },
+            {
+              "Line": 8,
+              "Offset": 19,
+              "EndOffset": 47,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfScheme(System.Uri,System.String,System.String,System.Nullable`1<Throw.ExceptionCustomizations>)": {
+          "Lines": {
+            "16": 12,
+            "17": 12,
+            "18": 6,
+            "19": 6,
+            "20": 0,
+            "21": 6
+          },
+          "Branches": [
+            {
+              "Line": 17,
+              "Offset": 16,
+              "EndOffset": 18,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 6
+            },
+            {
+              "Line": 17,
+              "Offset": 16,
+              "EndOffset": 44,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfAbsolute(System.Uri,System.String,System.Nullable`1<Throw.ExceptionCustomizations>)": {
+          "Lines": {
+            "25": 8,
+            "26": 8,
+            "27": 4,
+            "28": 4,
+            "29": 0,
+            "30": 4
+          },
+          "Branches": [
+            {
+              "Line": 26,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 4
+            },
+            {
+              "Line": 26,
+              "Offset": 9,
+              "EndOffset": 26,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfRelative(System.Uri,System.String,System.Nullable`1<Throw.ExceptionCustomizations>)": {
+          "Lines": {
+            "34": 8,
+            "35": 8,
+            "36": 4,
+            "37": 4,
+            "38": 0,
+            "39": 4
+          },
+          "Branches": [
+            {
+              "Line": 35,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 4
+            },
+            {
+              "Line": 35,
+              "Offset": 12,
+              "EndOffset": 29,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfPort(System.Uri,System.Int32,System.String,System.Nullable`1<Throw.ExceptionCustomizations>)": {
+          "Lines": {
+            "43": 4,
+            "44": 4,
+            "45": 2,
+            "46": 2,
+            "47": 0,
+            "48": 2
+          },
+          "Branches": [
+            {
+              "Line": 44,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 44,
+              "Offset": 12,
+              "EndOffset": 76,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void Throw.Validator::ThrowIfPortNot(System.Uri,System.Int32,System.String,System.Nullable`1<Throw.ExceptionCustomizations>)": {
+          "Lines": {
+            "52": 4,
+            "53": 4,
+            "54": 2,
+            "55": 2,
+            "56": 0,
+            "57": 2
+          },
+          "Branches": [
+            {
+              "Line": 53,
+              "Offset": 15,
+              "EndOffset": 17,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 53,
+              "Offset": 15,
+              "EndOffset": 79,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        }
+      }
+    }
+  }
+}
