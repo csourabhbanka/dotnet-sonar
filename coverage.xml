@@ -2,9 +2,9 @@
 <CoverageSession>
   <Summary numSequencePoints="715" visitedSequencePoints="671" numBranchPoints="114" visitedBranchPoints="110" sequenceCoverage="93.84" branchCoverage="96.49" maxCyclomaticComplexity="221" minCyclomaticComplexity="221" visitedClasses="27" numClasses="28" visitedMethods="150" numMethods="151" />
   <Modules>
-    <Module hash="6AED1AEA-2111-4BE7-9392-24FDFE3C1012">
+    <Module hash="FB5290DE-B027-43C6-B97F-2FEF00D0AE33">
       <ModulePath>Throw.dll</ModulePath>
-      <ModuleTime>2024-02-14T07:04:55</ModuleTime>
+      <ModuleTime>2024-02-14T07:14:53</ModuleTime>
       <ModuleName>Throw</ModuleName>
       <Files>
         <File uid="1" fullPath="/cloudbees/workspace/src/Common/ExceptionCustomizations.cs" />
