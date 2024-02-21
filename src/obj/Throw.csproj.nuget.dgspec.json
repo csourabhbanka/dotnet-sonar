@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/cloudbees/workspace/src/Throw.csproj": {}
+    "/Users/sbanka/dev/dotnet/dotnet-sonar/src/Throw.csproj": {}
   },
   "projects": {
-    "/cloudbees/workspace/src/Throw.csproj": {
+    "/Users/sbanka/dev/dotnet/dotnet-sonar/src/Throw.csproj": {
       "version": "1.1.1",
       "restore": {
-        "projectUniqueName": "/cloudbees/workspace/src/Throw.csproj",
+        "projectUniqueName": "/Users/sbanka/dev/dotnet/dotnet-sonar/src/Throw.csproj",
         "projectName": "Throw",
-        "projectPath": "/cloudbees/workspace/src/Throw.csproj",
+        "projectPath": "/Users/sbanka/dev/dotnet/dotnet-sonar/src/Throw.csproj",
         "packagesPath": "/Users/sbanka/.nuget/packages/",
-        "outputPath": "/cloudbees/workspace/src/obj/",
+        "outputPath": "/Users/sbanka/dev/dotnet/dotnet-sonar/src/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sbanka/.nuget/NuGet/NuGet.Config"

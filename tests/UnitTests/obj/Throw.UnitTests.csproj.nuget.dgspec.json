@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/cloudbees/workspace/tests/UnitTests/Throw.UnitTests.csproj": {}
+    "/Users/sbanka/dev/dotnet/dotnet-sonar/tests/UnitTests/Throw.UnitTests.csproj": {}
   },
   "projects": {
-    "/cloudbees/workspace/src/Throw.csproj": {
+    "/Users/sbanka/dev/dotnet/dotnet-sonar/src/Throw.csproj": {
       "version": "1.1.1",
       "restore": {
-        "projectUniqueName": "/cloudbees/workspace/src/Throw.csproj",
+        "projectUniqueName": "/Users/sbanka/dev/dotnet/dotnet-sonar/src/Throw.csproj",
         "projectName": "Throw",
-        "projectPath": "/cloudbees/workspace/src/Throw.csproj",
+        "projectPath": "/Users/sbanka/dev/dotnet/dotnet-sonar/src/Throw.csproj",
         "packagesPath": "/Users/sbanka/.nuget/packages/",
-        "outputPath": "/cloudbees/workspace/src/obj/",
+        "outputPath": "/Users/sbanka/dev/dotnet/dotnet-sonar/src/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sbanka/.nuget/NuGet/NuGet.Config"
@@ -68,14 +68,14 @@
         }
       }
     },
-    "/cloudbees/workspace/tests/UnitTests/Throw.UnitTests.csproj": {
+    "/Users/sbanka/dev/dotnet/dotnet-sonar/tests/UnitTests/Throw.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/cloudbees/workspace/tests/UnitTests/Throw.UnitTests.csproj",
+        "projectUniqueName": "/Users/sbanka/dev/dotnet/dotnet-sonar/tests/UnitTests/Throw.UnitTests.csproj",
         "projectName": "Throw.UnitTests",
-        "projectPath": "/cloudbees/workspace/tests/UnitTests/Throw.UnitTests.csproj",
+        "projectPath": "/Users/sbanka/dev/dotnet/dotnet-sonar/tests/UnitTests/Throw.UnitTests.csproj",
         "packagesPath": "/Users/sbanka/.nuget/packages/",
-        "outputPath": "/cloudbees/workspace/tests/UnitTests/obj/",
+        "outputPath": "/Users/sbanka/dev/dotnet/dotnet-sonar/tests/UnitTests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sbanka/.nuget/NuGet/NuGet.Config"
@@ -90,8 +90,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/cloudbees/workspace/src/Throw.csproj": {
-                "projectPath": "/cloudbees/workspace/src/Throw.csproj"
+              "/Users/sbanka/dev/dotnet/dotnet-sonar/src/Throw.csproj": {
+                "projectPath": "/Users/sbanka/dev/dotnet/dotnet-sonar/src/Throw.csproj"
               }
             }
           }

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute("A simple, fluent, extensible, and fully customizable library for throwing excepti" +
     "ons using .NET 6+")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.1.1.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.1+6ac6fae5b568e194a1b2cacfc73973267b539dca")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.1+41346ee113f4ab754f82c61e4cf3a9528f0815fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Throw")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Throw")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.1.1.0")]

@@ -2,7 +2,7 @@
   "version": 2,
   "dgSpecHash": "/6uI8VbUpNNLL2ABWJj3Ey/JHhwR1CSmcNKflDIM5QGHCyASw3rhLmBf1oFW7vDi4LZ5kNpcjfsm4wILGI48DA==",
   "success": true,
-  "projectFilePath": "/cloudbees/workspace/tests/UnitTests/Throw.UnitTests.csproj",
+  "projectFilePath": "/Users/sbanka/dev/dotnet/dotnet-sonar/tests/UnitTests/Throw.UnitTests.csproj",
   "expectedPackageFiles": [
     "/Users/sbanka/.nuget/packages/coverlet.collector/3.1.0/coverlet.collector.3.1.0.nupkg.sha512",
     "/Users/sbanka/.nuget/packages/fluentassertions/6.5.1/fluentassertions.6.5.1.nupkg.sha512",
